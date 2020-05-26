@@ -3,7 +3,7 @@ Disaster Tweets
 Erica
 21 de maio de 2020
 
-![](C:\Users\EricaCastilho\Dropbox\Recrutamentos\Github\Projeto%20NLP\disasters.jpg)
+![](C:disasters.jpg)
 
 Introduction/Objective
 ----------------------
@@ -494,13 +494,13 @@ confusion_matrix<-CrossTable(label_pred, y_test, prop.chisq = FALSE, chisq = FAL
     ##              | Actual 
     ##    Predicted |         0 |         1 | Row Total | 
     ## -------------|-----------|-----------|-----------|
-    ##            0 |       715 |       189 |       904 | 
-    ##              |     0.791 |     0.209 |     0.569 | 
-    ##              |     0.773 |     0.285 |           | 
+    ##            0 |       749 |       210 |       959 | 
+    ##              |     0.781 |     0.219 |     0.604 | 
+    ##              |     0.810 |     0.316 |           | 
     ## -------------|-----------|-----------|-----------|
-    ##            1 |       210 |       475 |       685 | 
-    ##              |     0.307 |     0.693 |     0.431 | 
-    ##              |     0.227 |     0.715 |           | 
+    ##            1 |       176 |       454 |       630 | 
+    ##              |     0.279 |     0.721 |     0.396 | 
+    ##              |     0.190 |     0.684 |           | 
     ## -------------|-----------|-----------|-----------|
     ## Column Total |       925 |       664 |      1589 | 
     ##              |     0.582 |     0.418 |           | 
@@ -516,6 +516,6 @@ print(paste0('Correctly predicted ',
              '% of the total.'))
 ```
 
-    ## [1] "Correctly predicted 1190 of 1589 tweets, which means 74.89% of the total."
+    ## [1] "Correctly predicted 1203 of 1589 tweets, which means 75.71% of the total."
 
-The accuracy for this model turns out to be 74.89 %. We see that in this case the most complex model did not lead tho the best results.
+The accuracy for this model turns out to be 75.71 %. We see that in this case the most complex model did not lead tho the best results.
