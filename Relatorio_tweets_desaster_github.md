@@ -557,13 +557,13 @@ confusion_matrix<-CrossTable(label_pred, y_test, prop.chisq = FALSE, chisq = FAL
 ##              | Actual 
 ##    Predicted |         0 |         1 | Row Total | 
 ## -------------|-----------|-----------|-----------|
-##            0 |       727 |       193 |       920 | 
-##              |     0.790 |     0.210 |     0.579 | 
-##              |     0.786 |     0.291 |           | 
+##            0 |       733 |       206 |       939 | 
+##              |     0.781 |     0.219 |     0.591 | 
+##              |     0.792 |     0.310 |           | 
 ## -------------|-----------|-----------|-----------|
-##            1 |       198 |       471 |       669 | 
-##              |     0.296 |     0.704 |     0.421 | 
-##              |     0.214 |     0.709 |           | 
+##            1 |       192 |       458 |       650 | 
+##              |     0.295 |     0.705 |     0.409 | 
+##              |     0.208 |     0.690 |           | 
 ## -------------|-----------|-----------|-----------|
 ## Column Total |       925 |       664 |      1589 | 
 ##              |     0.582 |     0.418 |           | 
@@ -581,7 +581,7 @@ print(paste0('Correctly predicted ',
 ```
 
 ```
-## [1] "Correctly predicted 1198 of 1589 tweets, which means 75.39% of the total."
+## [1] "Correctly predicted 1191 of 1589 tweets, which means 74.95% of the total."
 ```
 
-The accuracy for this model turns out to be 75.39 %. We see that in this case the most complex model did not lead tho the best results. 
+The accuracy for this model turns out to be 74.95 %. We see that in this case the most complex model did not lead tho the best results. 
