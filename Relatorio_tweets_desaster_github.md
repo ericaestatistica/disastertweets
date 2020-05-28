@@ -128,20 +128,26 @@ wordcloud(tweets_corpus_clean_train, min.freq = 50, random.order = FALSE)
 ```
 
 ![](Relatorio_tweets_desaster_github_files/figure-html/wordcloud-1.png)<!-- -->
+![](Figuras/wordcloud-1.png)
+
 
 ```r
 # wordcloud desasters 
 wordcloud(tweets_corpus_clean_train[y_train==1], min.freq = 50, random.order = FALSE)
 ```
 
-![](Relatorio_tweets_desaster_github_files/figure-html/wordcloud-2.png)<!-- -->
+![](Relatorio_tweets_desaster_github_files/figure-html/wordcloud2-1.png)<!-- -->
+![](Figuras/wordcloud-2.png)
+
 
 ```r
 # wordcloud not desasters 
 wordcloud(tweets_corpus_clean_train[y_train==0], min.freq = 50, random.order = FALSE)
 ```
 
-![](Relatorio_tweets_desaster_github_files/figure-html/wordcloud-3.png)<!-- -->
+![](Relatorio_tweets_desaster_github_files/figure-html/wordcloud3-1.png)<!-- -->
+![](Figuras/wordcloud-1.png)
+
 
 
 Now is time to select the features that will be used in the algorithm. In this case the features are the words. Will elminate some of them, all that have frequency smaller than 5 in the corpus. After that we will transform the frequency matrix in a binary matrix, it will receive
@@ -557,13 +563,13 @@ confusion_matrix<-CrossTable(label_pred, y_test, prop.chisq = FALSE, chisq = FAL
 ##              | Actual 
 ##    Predicted |         0 |         1 | Row Total | 
 ## -------------|-----------|-----------|-----------|
-##            0 |       733 |       206 |       939 | 
-##              |     0.781 |     0.219 |     0.591 | 
-##              |     0.792 |     0.310 |           | 
+##            0 |       747 |       217 |       964 | 
+##              |     0.775 |     0.225 |     0.607 | 
+##              |     0.808 |     0.327 |           | 
 ## -------------|-----------|-----------|-----------|
-##            1 |       192 |       458 |       650 | 
-##              |     0.295 |     0.705 |     0.409 | 
-##              |     0.208 |     0.690 |           | 
+##            1 |       178 |       447 |       625 | 
+##              |     0.285 |     0.715 |     0.393 | 
+##              |     0.192 |     0.673 |           | 
 ## -------------|-----------|-----------|-----------|
 ## Column Total |       925 |       664 |      1589 | 
 ##              |     0.582 |     0.418 |           | 
@@ -581,7 +587,7 @@ print(paste0('Correctly predicted ',
 ```
 
 ```
-## [1] "Correctly predicted 1191 of 1589 tweets, which means 74.95% of the total."
+## [1] "Correctly predicted 1194 of 1589 tweets, which means 75.14% of the total."
 ```
 
-The accuracy for this model turns out to be 74.95 %. We see that in this case the most complex model did not lead tho the best results. 
+The accuracy for this model turns out to be 75.14 %. We see that in this case the most complex model did not lead tho the best results. 
